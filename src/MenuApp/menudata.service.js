@@ -18,7 +18,7 @@ function MenuDataService($http){
     console.log(categoryShortName);
     return $http({
         method: "GET",
-        url:("https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/L.json")
+        url:("https://coursera-jhu-default-rtdb.firebaseio.com/menu_items.json?category.short_name = {categoryShortName}")
       });
   };
 }
